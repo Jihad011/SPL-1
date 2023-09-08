@@ -1,0 +1,469 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.77 [en] (Win98; U) [Netscape]">
+   <title>Bairstow Method</title>
+<style>A:hover{color=#ff0000}</style>
+<script>
+function srch(page){
+if(page==""){alert("enter search string");}
+else{
+window.open('../../base.html#'+page.toLowerCase(),'','width=300,height=75,scrollbars=yes');
+}
+}
+</script>
+<script>
+function hlts(){
+hlt=window.open('','','toolbar=no,width=150,height=170,location=top');
+hlt.document.open();
+hlt.document.writeln("<html><head><title>highlights</title></head><body bgcolor=#ffffee>");
+hlt.document.writeln("<font size=2>Error .");
+hlt.document.writeln("</font></body></html>");
+hlt.document.close();
+}
+function hltsclose(){
+hlt.window.close();
+}
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#0000EE" alink="#FF0000" background="../../images/bg.gif" nosave width="100%" height="100%">
+
+<div align=right><a href="" onclick="window.close()"><img SRC="../../images/close.gif" NOSAVE BORDER=1 height=14 width=16></a></div>
+
+<center><table BORDER=10 COLS=1 WIDTH="700" BGCOLOR="#FFFFFF" >
+<caption>
+<center><tbody>
+<br></tbody></center>
+</caption>
+
+<tr ALIGN=LEFT VALIGN=TOP>
+<td ALIGN=LEFT VALIGN=TOP>
+<center><b><font size=+2>Bairstow Method</font></b></center>
+
+<blockquote>This is another iterative method to find the roots of any polynomial
+equation <b>P<sub>n</sub>(x) = 0</b> given in the form.</blockquote>
+
+<center>
+<p><br><b>x<sup>n</sup> + a<sub>1 </sub>x<sup>n-1</sup> +&nbsp; .&nbsp;
+.&nbsp; . + a<sub>n-1</sub>x + a<sub>n</sub> = 0</b></center>
+
+<blockquote>Unlike Berge-Vieta method here a second degree polynomial is
+taken as a factor from <b>P<sub>n</sub>(x) </b>are written as&nbsp;</blockquote>
+
+<center>
+<p><br>(<b>x<sup>2</sup> + px + q) Q<sub>n-2</sub>(x) + Rx + S = 0</b></center>
+
+<blockquote>where <b>Q<sub>n-2</sub>(x)</b>, deflated polynomial,<b>&nbsp;&nbsp;</b>
+is a polynomial of degree <b>(n-2)</b> of the form</blockquote>
+
+<center>
+<p><br><b>x<sup>n-2</sup> + b<sub>1 </sub>x<sup>n-3</sup> +&nbsp; .&nbsp;
+.&nbsp; . + b<sub>n-3</sub>x + b<sub>n-2</sub> = 0,</b></center>
+
+<blockquote><b>R</b> and <b>S</b> are residues depend on <b>p</b> and <b>q</b>.
+Now the problem is to find <b>p</b> and <b>q</b> such that <b>R(p,q) =
+0</b>, <b>S(p,q) = 0</b>. This is a system of two equations with two unknowns
+which we already discussed in the sections <a href="../iteration methods/complex roots/complex roots.html">complex
+roots</a> and also in <a href="../iteration methods/system of equations/nm.html">system
+of equations</a>.</blockquote>
+
+<blockquote>According to their scheme if <b>p<sub>0</sub></b> and <b>q<sub>0</sub></b>
+are initial approximations for <b>p</b> and <b>q</b> then the&nbsp; iterative
+process can be written as</blockquote>
+
+<center><b>p<sub>i+1</sub> = p<sub>i</sub> + dp </b>and&nbsp; <b>q<sub>i+1</sub>
+= q<sub>i</sub> + dq&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i = 0, 1, 2, . . .</b></center>
+
+<blockquote>where&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>dp = - (RS<sub>q</sub> - SR<sub>q</sub>) / (R<sub>p</sub> S<sub>q</sub>
+- R<sub>q</sub>S<sub>p</sub>)</b></blockquote>
+
+<p><br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+dq = - (R<sub>p</sub>S - RS<sub>p</sub>) / (R<sub>p</sub>S<sub>q</sub>
+- R<sub>q</sub>S<sub>p</sub>)</b>
+<br>&nbsp;
+<blockquote>where<b> R<sub>p</sub>, R<sub>q</sub>, S<sub> p</sub> </b>and<b>
+S<sub>q</sub></b> are partial derivatives with respect to <b>p</b> and
+<b>q</b> evaluated at <b>p<sub>i</sub></b> and <b>q<sub>i</sub></b> .</blockquote>
+
+<blockquote>Now by comparing the two <b>n</b>th degree polynomials defined
+above, we have</blockquote>
+
+<br>&nbsp;
+<center><table WIDTH="55%" >
+<caption>
+<center><tbody>
+<br></tbody></center>
+</caption>
+
+<tr>
+<td ALIGN=RIGHT><b>a<sub>1</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>b<sub>1</sub> + p</b></td>
+
+<td><b><font face="Symbol">&THORN;</font></b></td>
+
+<td ALIGN=RIGHT><b>b<sub>1</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>1</sub> - p</b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>a<sub>2</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>b<sub>2</sub> + pb<sub>1</sub></b> <b>+ q</b></td>
+
+<td><b><font face="Symbol">&THORN;</font></b></td>
+
+<td ALIGN=RIGHT><b>b<sub>2</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>2</sub> - pb<sub>1</sub></b> <b>- q</b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td ALIGN=RIGHT><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>a<sub>i</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>b<sub>i </sub>+ pb<sub>i-1</sub>+ qb<sub>i-2</sub></b></td>
+
+<td><b><font face="Symbol">&THORN;</font></b></td>
+
+<td ALIGN=RIGHT><b>b<sub>i</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>i</sub> - pb<sub>i-1</sub>- qb<sub>i-2</sub></b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td ALIGN=RIGHT><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+
+<td></td>
+
+<td><b>.</b>
+<br><b>.</b>
+<br><b>.</b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>a<sub>n-1</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>R + pb<sub>n-2</sub>+ qb<sub>n-3</sub></b></td>
+
+<td><b><font face="Symbol">&THORN;</font></b></td>
+
+<td ALIGN=RIGHT><b>R = bn</b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>n-1</sub> - pb<sub>n-2 </sub>- qb<sub>n-3</sub></b></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>a<sub>n</sub></b></td>
+
+<td>=</td>
+
+<td><b>S + qb<sub>n-2</sub></b></td>
+
+<td><b><font face="Symbol">&THORN;</font></b></td>
+
+<td ALIGN=RIGHT><b>S&nbsp;</b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>n </sub>- qb<sub>n-2</sub></b></td>
+</tr>
+
+<tr>
+<td><b>i.e.,</b></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+</tr>
+
+<tr>
+<td ALIGN=RIGHT><b>b<sub>i</sub></b></td>
+
+<td><b>=</b></td>
+
+<td><b>a<sub>i</sub> - pb<sub>i-1</sub> - qb<sub>i-2</sub></b></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td><b>i=1,2,...n</b></td>
+</tr>
+
+<tr>
+<td COLSPAN="7">
+<br>with <b>b<sub>0</sub> = 1</b>, <b>b<sub>-1</sub> = 0</b></td>
+</tr>
+</table></center>
+
+<blockquote>The last two equations here are</blockquote>
+
+<center><b>R = b<sub>n-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</sub>S = b<sub>n</sub> + pb<sub>n-1</sub></b></center>
+
+<blockquote>The partial derivatives <b>R<sub>p</sub> , R<sub>q</sub>, S<sub>p</sub></b>
+and <b>S<sub>q</sub></b> can be determined by differentiating above equation
+with respect to <b>p</b> and <b>q</b> we get&nbsp;</blockquote>
+
+<blockquote><b><font face="Symbol">-</font>(<font face="Symbol"> &para;</font>b<sub>i
+</sub>/ <font face="Symbol">&para;</font>p) = b<sub> i-1</sub> + p(<font face="Symbol">&para;</font>b<sub>i-1
+</sub>/ <font face="Symbol">&para;</font>p) + q(<font face="Symbol">&para;</font>b<sub>i-2
+</sub>/ <font face="Symbol">&para;</font>p)</b>
+<p><b><font face="Symbol">-</font>(<font face="Symbol"> &para;</font>b<sub>i
+</sub>/ <font face="Symbol">&para;</font>q) = b<sub> i-2</sub> + p(<font face="Symbol">&para;</font>b<sub>i-1
+</sub>/ <font face="Symbol">&para;</font>q) + q(<font face="Symbol">&para;</font>b<sub>i-2
+</sub>/ <font face="Symbol">&para;</font>q)</b>
+<p>with&nbsp;
+<br><b>(<font face="Symbol">&para;</font>b<sub>0 </sub>/ <font face="Symbol">&para;</font>p)
+= (<font face="Symbol">&para;</font>b<sub>-1 </sub>/ <font face="Symbol">&para;</font>
+p) = (<font face="Symbol">&para;</font>b<sub>0 </sub>/ <font face="Symbol">&para;</font>q)
+= (<font face="Symbol">&para;</font>b<sub>-1 </sub>/ <font face="Symbol">&para;</font>q)
+= 0</b>.&nbsp;
+<p>substituting&nbsp;&nbsp; <b>(<font face="Symbol"> &para;</font>b<sub>i
+</sub>/ <font face="Symbol">&para;</font>p) = - c<sub> i-1</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i = 1, 2, . . ., n</b>
+<p>gives <b>c<sub>i-1</sub> = b<sub>i-1</sub> - pc<sub>i-2</sub> - qc<sub>i-3</sub></b>
+<p>similarly if&nbsp; <b>c<sub>i-2</sub> = - (<font face="Symbol">&para;</font>b<sub>i
+</sub>/ <font face="Symbol">&para;</font> q)</b>
+<p>then <b>c<sub>i-2</sub> = b<sub>i-2</sub> - pc<sub>i-3</sub> - qc<sub>i-4</sub></b>
+<p>thus we have&nbsp;
+<blockquote>
+<center><b>c<sub>i</sub> = b<sub>i</sub> - pc<sub>i-1</sub> - qc<sub>i-2</sub>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i = 1, 2, .&nbsp; .&nbsp; ., n</b></center>
+</blockquote>
+where <b>c<sub>0</sub> = 1, c-1 = 0</b>
+<p>Then&nbsp;
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R<sub>p</sub>
+= -c<sub>n-2</sub></b>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S<sub>p</sub>
+= b<sub>n-1</sub> - c<sub>n-1</sub> - pc<sub>n-2</sub></b>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R<sub>q</sub>=
+-c<sub>n-3</sub></b>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S<sub>q</sub>=&nbsp;
+-(c<sub>n-2</sub> + pc<sub>n-3</sub>)</b>
+<p>that is</blockquote>
+
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="69%" >
+<caption>
+<center><tbody>
+<br></tbody></center>
+</caption>
+
+<tr>
+<td ROWSPAN="3"><b>&nbsp;&nbsp; dp = <font face="Symbol">-&nbsp;</font></b></td>
+
+<td>
+<center><b>bc<sub>n-3</sub> - b<sub>n-1</sub> c<sub>n-2</sub></b></center>
+</td>
+
+<td>&nbsp;</td>
+
+<td ROWSPAN="3"><b>dq = <font face="Symbol">-&nbsp;</font></b></td>
+
+<td>
+<center><b>b<sub>n-1</sub>(c<sub>n-1</sub> - b<sub>n-1</sub>) - b<sub>n</sub>c<sub>n-2</sub></b></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<hr align="Left" noshade="" width="100%"></td>
+
+<td></td>
+
+<td>
+<hr align="Left" noshade="" width="100%"></td>
+</tr>
+
+<tr>
+<td>
+<center><b>c<sup>2</sup><sub>n-2</sub> - c<sub>n-3</sub>(c<sub>n-1</sub>
+- b<sub>n-1</sub>)</b></center>
+</td>
+
+<td></td>
+
+<td>
+<center><b>c<sup>2</sup><sub>n-2</sub> - c<sub>n-3</sub>(c<sub>n-1</sub>
+- b<sub>n-1</sub>)</b></center>
+</td>
+</tr>
+</table></center>
+
+<blockquote><P ALIGN=JUSTIFY>This process after convergence for <b>p</b> and <b>q</b> will
+separate a second degree polynomial from the given <b>n</b>th degree polynomial.
+The roots of this second degree equation can be obtained by the analytical
+formula for all kinds of roots. The same process can be repeated to get
+another second degree equation from the deflated polynomial <b>Q<sub>n-2</sub>(x)</b>.
+The coefficients of <b>Q<sub>n-2</sub> (x)</b> can be taken from the array
+<b>b</b>. This process is repeated until we get all <b>n</b> roots of the
+given equation.&nbsp;</blockquote>
+
+<center><table BORDER WIDTH="600" BGCOLOR="#006600" >
+<caption><a NAME="problems"></a><b><font color="#006600">Worked out problems</font></b></caption>
+
+<tr>
+<td COLSPAN="3" BGCOLOR="#FFFFFF">
+<center>&nbsp; <b><font color="#000099">Find the roots of the following
+polynomial equations</font></b></center>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 1</font></td>
+
+<td>&nbsp; <b><font color="#FFCC00">x<sup>3</sup> - 11x<sup>2</sup> + 32x
+- 22 = 0</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp1">Solution</a></b></td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 2</font></td>
+
+<td>&nbsp;<b><font color="#FFCC00">x<sup>3</sup>-x - 3 = 0</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp2">Solution</a></b></td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 3</font></td>
+
+<td>&nbsp;<b><font color="#FFCC00">x<sup>4</sup>+x<sup>3 </sup>+ 2x<sup>2</sup>&nbsp;
++ x + 1 = 0&nbsp;&nbsp;</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp3">Solution</a></b></td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 4</font></td>
+
+<td>&nbsp;<b><font color="#FFCC00">x<sup>6
+</sup>- x<sup>4
+</sup>- x<sup>3</sup>
+- 1 = 0</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp4">Solution</a></b></td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 5</font></td>
+
+<td>&nbsp;<b><font color="#FFCC00">x<sup>3 </sup>- 3.7x<sup>2
+</sup>+ 6.2x
+- 4.069 = 0</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp5">Solution</a></b></td>
+</tr>
+
+<tr>
+<td>&nbsp;<font color="#FF0000">Exapmple 6</font></td>
+
+<td>&nbsp;<b><font color="#FFCC00">x<sup>4 </sup>- x - 10 = 0</font></b></td>
+
+<td BGCOLOR="#FFFFFF">&nbsp;<b><a href="brs examples.html#exp6">Solution</a></b></td>
+</tr>
+
+<tr>
+<td COLSPAN="3" BGCOLOR="#FFFFFF">
+<center><b><font color="#006600"><a href="brs examples.html#exercise problems">Problems
+to workout</a></font></b></center>
+</td>
+</tr>
+</table></center>
+
+<br>&nbsp;
+<blockquote><font color="#990000"><font size=+1>Work out&nbsp; here :</font></font></blockquote>
+<applet codebase="../../applets" code="Bairstow.class" width="100%" height="117"></applet></td>
+</tr>
+
+<tr>
+<td>
+<center><a href="iterative.html"><img SRC="../../images/back.gif" NOSAVE BORDER=0 height=26 width=149></a><a href="direct.html"><img SRC="../../images/next.gif" NOSAVE BORDER=0 height=26 width=151></a></center>
+</td>
+</tr>
+</table></center>
+
+<hr width="100%">
+<center><font size=-1><a href="../transcendental.html">Solution of Transcendental
+Equations</a> | <a href="../../lae/lae.html">Solution of Linear System
+of Algebraic Equations</a> | <a href="../../interpolation/interpolation.html">Interpolation
+&amp; Curve Fitting</a></font>
+<br><font size=-1><a href="../../nd-ni/nd-ni.html">Numerical Differentiation
+&amp; Integration</a> | <a href="../../ode/ode.html">Numerical Solution
+of Ordinary Differential Equations</a></font>
+<br><font size=-1><a href="../../pde/pde.html">Numerical Solution of Partial
+Differential Equations</a></font>
+<br><form name="f21" onsubmit="srch(f21.txt.value)"><input type="text" size="14" name="txt"><input type="submit" value="search"></form></center>
+
+<p><br>
+</body>
+</html>

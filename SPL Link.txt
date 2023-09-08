@@ -1,0 +1,31 @@
+
+Bairstrow Related Method:-
+
+  https://en.wikipedia.org/wiki/Bairstow%27s_method
+
+ https://www.bing.com/ck/a?!&&p=f26f8b0a6fbf8b3cJmltdHM9MTY5NDEzMTIwMCZpZ3VpZD0xMzM5ZGMwYS03ZGYyLTY0NzEtMDM2NC1jZjY1N2NiZDY1YzcmaW5zaWQ9NTMzNw&ptn=3&hsh=3&fclid=1339dc0a-7df2-6471-0364-cf657cbd65c7&u=a1aHR0cHM6Ly9hdG96bWF0aC5jb20vQ09OTS9CYWlyc3Rvdy5hc3B4&ntb=1
+
+
+https://dl.acm.org/doi/pdf/10.1145/363332.363376
+	
+
+https://encyclopediaofmath.org/wiki/Bairstow_method
+
+
+https://www.liquisearch.com/bairstows_method/description_of_the_method
+
+https://archive.nptel.ac.in/content/storage2/courses/122104019/numerical-analysis/Rathish-kumar/ratish-1/f3node9.html
+
+
+
+	Cramers's Method Related:-
+
+https://byjus.com/maths/cramers-rule/#
+
+https://www.math.net/cramers-rule
+
+https://www.geeksforgeeks.org/cramers-rule/
+
+https://math.libretexts.org/Bookshelves/Algebra/Advanced_Algebra/03%3A_Solving_Linear_Systems/3.06%3A_Determinants_and_Cramers_Rule
+
+https://www.symbolab.com/solver/cramers-rule-system-of-equations-calculator
